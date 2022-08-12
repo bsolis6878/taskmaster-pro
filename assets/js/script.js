@@ -250,6 +250,7 @@ $("#trash").droppable({
   accept: ".card .list-group-item",
   tolerance: "touch",
   drop: function(event, ui) {
+    ui.draggable.remove();
     $(".bottom-trash").removeClass("bottom-trash-active");
   },
   over: function(event, ui) {
